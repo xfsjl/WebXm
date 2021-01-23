@@ -1,0 +1,20 @@
+package com.alipay.config;
+
+public class AlipayConfig {
+    //appid
+    public static String app_id ="2016102200740524";//在后台获取（必须配置）
+    //开发助手工具，对应的两个文件中的私钥
+    public static String merchant_private_key ="MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCTUlAgWKXuHpFOTfmKqj43NmaA+mRCGso8WCyn+74SgmVKbWUoURi1IhyaM+3jP9SpWE0ktvZ8SSMH35p1MwYe+W0UFYnDItYbhq1p4KAJQNspZSBv+Yta5LVcFhNoMXtdmrQhpwwVRXu52VXQcYYWSCE9mYjWyWUNDeOKhFAOAkvDfWOrraGxGOcSzTA+pPypHYV2/BkJo23yGoBYgMfW1DNjF5U3cFhnvKhC3VywfcyDiDk2y/Pl4Q2c83J4spred0o2xRQZ1h73O4dXT4D/dklYZpu6hz4JRZ8HID4s1SpqWhIddR7w8vlACBgt3+IoVv0zH6KEDKzK1ZNpCK5FAgMBAAECggEAV6hLmuOEX6n6haAp0hM4D7wjw6y5CQhNuxgwAgftca/6uw1aemG+lNBmOm6ZpnTtgZHT3PussAkIef/XNNMWWknJWID0RpKs2RYKiwwnzTm07e2JHndaLswVCWTtSTrgD7MkaT2vF90PIGcsA2n5AbsLZE69uCd/JARWlq3hwGNANB/SRpZjsMEdcj5ocIQQhmTJc1+ptdHLgr+RN/gUD2um642/S9Z3KRYfiLEjQCH1ywYZiYdGXf6FP+w0yiy0/1xhEorjxGRvcuWuqOwwxM9j5g1F8QW9jRQWZZ37YpaPpaTwNfe2lGxxS3qvEfZCeoXZEzqg0TZ1MEsjAjC2RQKBgQDFbE6An/cb4/vDguj1TiDXbN9aTiPuejKyf8QRPHq65j4QWS35q+4SlrNS2VXpxFMQeU0Puj7jw1ugWLB5bvW3fkSmP+pQZrmkUdS2vzqlyuFnImLRq+gt0Rdoaqx+j2FyQ/yg3BZNok3IGbNDdo4UNVd3hY/rFxA0trpB/YKvAwKBgQC/CG+9RmLWZeoHjb0639aCTAXeX/newHHBEbiIwVO1AyC1HStxHKREGXczUlm2GY46DDArLRjEBpMxIPw0YEYPwstTOqamX0g6mla9fHGsaRSUjSZyF2ui6hEOJ0CU0H6suAznlSBeRn3ROtckNpyVN2VpqjO8GdvsitM062CnFwKBgGf83HyzxZ1TQNGCquJK/NF770nJzvNWOk37LnNFv/+iNx61WpogDY6NAnepMq+nUXlj60tVdrrRs/mJvaq434R/ZfmLwQgIk9ARqlF3+JRLgN6qJhL60ZkQgZvmVGV1cIaXeQHh632I+B9mKh5m2/+Y+TFjkKLrywV5GjKYLbWxAoGAFBzbRt5GQbRxM2Jk7fHrL8S5SXRpZl50m5M2Do/sND6kDu2HSV1ungzgU/LzpwyBwPLPj3wsA1d938pNQ2ZvefFUXurp6NJXVHQzdbfIcBKQLCPATHrSxlBGg2r2jbR14dFu6mL1CXf6fzDmvdVSHxO6Ban50HAYi4sCOawefPkCgYB4pQ1TlaqkQw/Qh5r1hbuAc4CWAdvV5gtsZ0Ug643yioFOAx6m1+OQ7J9HFPFOP9DlsZLUyO1q8w5D6RSWkGTeAscNUaOtcAMjCXLU4vEqWuHljojAt9OQcuBAAwCp4Ru2d7EyHTgsFkv8DukEZH8QF/Z4jbgJr1pdJQ3Y2nYnzA==";
+    //支付宝公钥
+    public static String alipay_public_key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk1JQIFil7h6RTk35iqo+NzZmgPpkQhrKPFgsp/u+EoJlSm1lKFEYtSIcmjPt4z/UqVhNJLb2fEkjB9+adTMGHvltFBWJwyLWG4ataeCgCUDbKWUgb/mLWuS1XBYTaDF7XZq0IacMFUV7udlV0HGGFkghPZmI1sllDQ3jioRQDgJLw31jq62hsRjnEs0wPqT8qR2FdvwZCaNt8hqAWIDH1tQzYxeVN3BYZ7yoQt1csH3Mg4g5Nsvz5eENnPNyeLKa3ndKNsUUGdYe9zuHV0+A/3ZJWGabuoc+CUWfByA+LNUqaloSHXUe8PL5QAgYLd/iKFb9Mx+ihAysytWTaQiuRQIDAQAB";
+    //要改路径
+    public static String notify_url = "http://localhost:8089/zpay01_war/alipayNotifyNotice.action";
+
+    public static String return_url = "http://localhost:8089/zpay01_war/alipayReturnNotice.action";
+
+    public static String sign_type = "RSA2";
+
+    public static String charset = "utf-8";
+
+    public static String gatewayUrl = "https://openapi.alipaydev.com/gateway.do";//注意：沙箱测试环境，正式环境为：https://openapi.alipay.com/gateway.do
+}
